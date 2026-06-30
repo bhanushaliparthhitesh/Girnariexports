@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girnari Export | Premium Onion Powder Exporter</title>
+    <meta name="description" content="Girnari Export - Premium onion powder exporter providing high-quality, organic, and bulk onion powder solutions to global kitchens.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Dynamic inclusion of SVG sprite -->
+    <div id="svg-sprite-container"></div>
+    <script>
+        fetch('assets/icons.svg')
+            .then(response => response.text())
+            .then(svg => document.getElementById('svg-sprite-container').innerHTML = svg);
+    </script>
+
+    <!-- Navigation Bar -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Girnari</span> Export
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact" class="btn btn-outline">Get Quote</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <svg><use href="#icon-menu"></use></svg>
+            </button>
+        </div>
+        <div class="header-accent-line"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero.png" alt="Expansive onion field in India" loading="lazy">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">PREMIUM ONION POWDER<br>FOR GLOBAL KITCHENS</h1>
+            <p class="fade-in-up delay-1">Exporting Excellence Since 1985</p>
+            <a href="#products" class="btn btn-primary fade-in-up delay-2">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>What We Offer</h2>
+                <p>Discover our range of premium onion products, crafted to elevate global culinary experiences.</p>
+            </div>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card fade-in-up delay-1">
+                    <div class="card-image">
+                        <img src="images/products/premium.png" alt="Premium Onion Powder" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Premium Onion Powder</h3>
+                        <p>Our flagship product, finely milled for the perfect flavor release and solubility in any dish.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card fade-in-up delay-2">
+                    <div class="card-image">
+                        <img src="images/products/organic.png" alt="Organic Variants" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Organic Variants</h3>
+                        <p>Certified organic onion powder grown without synthetic pesticides, for the conscious consumer.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card fade-in-up delay-3">
+                    <div class="card-image">
+                        <img src="images/products/bulk.png" alt="Bulk Export Solutions" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bulk Export Solutions</h3>
+                        <p>Tailored packaging and volume solutions designed for large-scale manufacturers and distributors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in-up delay-1">
+                    <h3 class="counter" data-target="39">0</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item fade-in-up delay-2">
+                    <h3><span class="counter" data-target="7">0</span>B+</h3>
+                    <p>Global Customers Reached</p>
+                </div>
+                <div class="stat-item fade-in-up delay-3">
+                    <h3><span class="counter" data-target="14">0</span>M+</h3>
+                    <p>Tons Exported</p>
+                </div>
+            </div>
+            <div class="stats-cta fade-in-up delay-4 text-center mt-4">
+                <a href="#about" class="btn btn-outline-light">Learn More</a>
+                <a href="#contact" class="btn btn-primary">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Grid -->
+    <section id="certifications" class="section certifications-section bg-light">
+        <div class="container text-center">
+            <h2 class="fade-in-up">Quality Assured Across All Markets</h2>
+            <div class="cert-grid fade-in-up delay-1">
+                <div class="cert-badge">ISO 22000</div>
+                <div class="cert-badge">FDA Approved</div>
+                <div class="cert-badge">FSSAI</div>
+                <div class="cert-badge">HACCP</div>
+                <div class="cert-badge">Halal Certified</div>
+                <div class="cert-badge">Kosher Certified</div>
+                <div class="cert-badge">GMP</div>
+                <div class="cert-badge">BRCGS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Strength Section -->
+    <section id="about" class="section strengths-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Our Strength</h2>
+                <p>What makes Girnari Export the preferred choice worldwide.</p>
+            </div>
+            <div class="strengths-grid">
+                <div class="strength-card fade-in-up">
+                    <div class="icon-wrap"><svg><use href="#icon-leaf"></use></svg></div>
+                    <h3>Farm to Table Quality</h3>
+                    <p>Direct sourcing from our network of dedicated farmers ensures unbeatable freshness and quality control.</p>
+                </div>
+                <div class="strength-card fade-in-up delay-1">
+                    <div class="icon-wrap"><svg><use href="#icon-cog"></use></svg></div>
+                    <h3>Advanced Processing</h3>
+                    <p>State-of-the-art milling and dehydration technology preserves the natural aroma and essential oils.</p>
+                </div>
+                <div class="strength-card fade-in-up delay-2">
+                    <div class="icon-wrap"><svg><use href="#icon-star"></use></svg></div>
+                    <h3>Consistent Flavor</h3>
+                    <p>Rigorous batch testing guarantees a uniform flavor profile in every shipment we deliver.</p>
+                </div>
+                <div class="strength-card fade-in-up delay-3">
+                    <div class="icon-wrap"><svg><use href="#icon-shield"></use></svg></div>
+                    <h3>Export Certifications</h3>
+                    <p>Fully compliant with stringent international food safety standards and export regulations.</p>
+                </div>
+                <div class="strength-card fade-in-up delay-4">
+                    <div class="icon-wrap"><svg><use href="#icon-price"></use></svg></div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Economies of scale allow us to offer premium quality at highly competitive global rates.</p>
+                </div>
+                <div class="strength-card fade-in-up delay-5">
+                    <div class="icon-wrap"><svg><use href="#icon-truck"></use></svg></div>
+                    <h3>Reliable Supply Chain</h3>
+                    <p>A robust logistics network ensuring on-time delivery to ports and warehouses worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery + News Section -->
+    <section class="section gallery-news-section bg-light">
+        <div class="container">
+            <div class="gallery-news-grid">
+                <div class="gallery-column">
+                    <div class="gallery-item fade-in-up">
+                        <img src="images/gallery_1.png" alt="Gourmet Dish" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Culinary Excellence</h4>
+                            <p>Enhancing flavors in top restaurants globally.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in-up delay-1">
+                        <img src="images/gallery_2.png" alt="Dried Onions" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Raw Perfection</h4>
+                            <p>Starting with only the finest ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-column fade-in-up delay-2">
+                    <div class="news-box">
+                        <h3>News & Updates</h3>
+                        <ul class="news-list">
+                            <li>
+                                <span class="date">May 2026</span>
+                                <h4>New Facility Expansion</h4>
+                                <p>We've expanded our processing capacity to meet growing European demand.</p>
+                            </li>
+                            <li>
+                                <span class="date">March 2026</span>
+                                <h4>Awarded Top Exporter</h4>
+                                <p>Recognized by the export council for outstanding contribution to agro-exports.</p>
+                            </li>
+                            <li>
+                                <span class="date">January 2026</span>
+                                <h4>100% Sustainable Energy</h4>
+                                <p>Our primary facility now operates entirely on renewable solar energy.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team/Company Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="team-layout">
+                <div class="team-content fade-in-up">
+                    <h2>Trusted by Global Exporters</h2>
+                    <p>At Girnari Export, our dedicated team of agricultural experts, processing engineers, and logistics professionals work tirelessly to uphold our legacy of quality.</p>
+                    <p>Our mission is to deliver the authentic, robust flavor of Indian onions to every corner of the globe, setting the benchmark for quality and reliability in the spice export industry.</p>
+                </div>
+                <div class="team-image fade-in-up delay-1">
+                    <img src="images/team.png" alt="Girnari Export Corporate Team" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom/Facility Section -->
+    <section class="facility-section">
+        <div class="facility-bg">
+            <img src="images/facility.png" alt="Modern Processing Facility" loading="lazy">
+        </div>
+        <div class="facility-overlay"></div>
+        <div class="container facility-content fade-in-up">
+            <h2>State-of-the-art Processing</h2>
+            <p>Experience the highest standards of hygiene and technology.</p>
+            <a href="#contact" class="btn btn-primary mt-2">Visit Our Facility</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Get a Quote</h2>
+                <p>Reach out to us for bulk inquiries, custom packaging, or any other questions.</p>
+            </div>
+            <div class="contact-form-wrapper fade-in-up delay-1">
+                <form action="https://formspree.io/f/placeholder" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <span class="logo-accent">Girnari</span> Export
+                </a>
+                <p>Premium onion powder exporter bringing authentic flavor from our farms to your global kitchens.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Info</h3>
+                <p>Email: info@girnariexport.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <div class="social-links mt-2">
+                    <a href="#" aria-label="LinkedIn"><svg><use href="#icon-linkedin"></use></svg></a>
+                    <a href="#" aria-label="Facebook"><svg><use href="#icon-facebook"></use></svg></a>
+                    <a href="#" aria-label="Instagram"><svg><use href="#icon-instagram"></use></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Girnari Export. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to Top" class="scroll-to-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
