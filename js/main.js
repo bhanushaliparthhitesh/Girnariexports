@@ -25,10 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Header Scroll Effect & Active Link ---
-    const header = document.getElementById('header');
-    const sections = document.querySelectorAll('section');
+    // --- Active Link Highlighting ---
     const navItems = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navItems.forEach(a => {
+        const linkPath = a.getAttribute('href');
+        if (linkPath === currentPath) {
+            a.classList.add('active');
+        } else {
+            a.classList.remove('active');
+        }
+    });
+
+    // --- Header Scroll Effect ---
+    const header = document.getElementById('header');
 
     window.addEventListener('scroll', () => {
         // Header background
@@ -37,23 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
-
-        // Active link highlighting
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(a => {
-            a.classList.remove('active');
-            if (a.getAttribute('href').includes(current) && current !== null) {
-                a.classList.add('active');
-            }
-        });
     });
 
     // --- Scroll to Top Button ---
